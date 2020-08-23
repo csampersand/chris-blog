@@ -16,7 +16,7 @@ export default function Links() {
         </Link>
       </div>
       <div className="flex flex-col-reverse sm:flex-row">
-        <div className="flex flex-col my-4 mx-16 sm:mx-6 text-center sm:text-left">
+        <div className="flex flex-col my-12 sm:my-4 px-4 sm:mx-6 text-center sm:text-left">
           <a className="text-3xl font-bold mb-1 transition ease-in-out duration-200 hover:text-blue-500">
             Projects
           </a>
@@ -53,7 +53,7 @@ export default function Links() {
             Instagram
           </a>
         </div>
-        <div className="flex-1 mx-8 px-4">
+        <div className="flex-1 mx-0 sm:mx-8 px-4">
           <h1 className="mt-5 text-5xl font-bold leading-10 text-center sm:text-left">
             {name}
           </h1>
