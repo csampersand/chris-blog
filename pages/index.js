@@ -21,7 +21,7 @@ export default function Home({ allPostsData }) {
         </p>
         <p>
           I also publish a monthly newsletter about biohacking, startups,
-          dating, and spirituality that is available to{' '}
+          dating, and mindfulness that is available to{' '}
           <Link href="/subscribe">
             <a className="text-blue-500 hover:underline"> subscribers</a>
           </Link>
