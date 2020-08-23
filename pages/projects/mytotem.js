@@ -1,8 +1,13 @@
+import Head from 'next/head'
 import Link from 'next/link'
 
-export default function GARD() {
+export default function MyTotem() {
   return (
     <div className="max-w-xs px-4 my-24 mx-auto mb-24">
+      <Head>
+        <title>MyTotem</title>
+      </Head>
+
       <h1 className="mt-8 text-6xl leading-10 font-black tracking-tighter my-4">
         MyTotem
       </h1>

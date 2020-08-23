@@ -1,10 +1,13 @@
-import Link from 'next/link'
+import Head from 'next/head'
 import Links from '../components/links'
 
 export default function About() {
   const name = 'Chris Anderson'
   return (
     <div className="flex flex-col max-w-3xl px-4 mt-12 mx-auto mb-24">
+      <Head>
+        <title>Chris Anderson</title>
+      </Head>
       <div className="flex flex-col items-center sm:items-start">
         <img
           src="/images/logo.png"

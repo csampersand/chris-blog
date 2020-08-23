@@ -1,8 +1,12 @@
+import Head from 'next/head'
 import Link from 'next/link'
 
 export default function SeizeTheMarket() {
   return (
     <div className="max-w-xs px-4 my-24 mx-auto mb-24">
+      <Head>
+        <title>Seize the Market</title>
+      </Head>
       <h1 className="mt-8 text-6xl leading-7 font-black tracking-tighter my-4">
         Seize <br />
         <br />

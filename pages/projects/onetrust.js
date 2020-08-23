@@ -1,8 +1,13 @@
+import Head from 'next/head'
 import Link from 'next/link'
 
 export default function OneTrust() {
   return (
     <div className="max-w-xs px-4 my-24 mx-auto mb-24">
+      <Head>
+        <title>OneTrust</title>
+      </Head>
+
       <h1 className="mt-8 text-6xl leading-10 font-black tracking-tighter my-4">
         OneTrust
       </h1>
@@ -30,9 +35,7 @@ export default function OneTrust() {
           component library, and helped develop a microfrontend architecture.
         </p>
 
-        <p className="mt-4 font-bold">
-          Angular, Jasmine, Protractor, Material Design
-        </p>
+        <p className="mt-4 font-bold">Angular, RxJS, Material Design</p>
         <Link href="/about">
           <a className="mt-12 text-xl text-blue-500 hover:underline">
             ← Back to home
