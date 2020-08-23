@@ -23,7 +23,7 @@ export default function Home({ allPostsData }) {
           I also publish a monthly newsletter about biohacking, startups,
           dating, and spirituality that is available to{' '}
           <Link href="/subscribe">
-            <a className="text-blue-500 hover:underline">paid subscribers</a>
+            <a className="text-blue-500 hover:underline"> subscribers</a>
           </Link>
           .
         </p>
