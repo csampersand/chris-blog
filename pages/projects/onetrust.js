@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function OneTrust() {
   return (
-    <div className="max-w-xs px-4 my-24 mx-auto mb-24">
+    <div className="max-w-xs sm:max-w-sm px-4 my-24 mx-auto mb-24">
       <Head>
         <title>OneTrust</title>
       </Head>
