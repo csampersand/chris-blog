@@ -20,7 +20,7 @@ export default function PostList({ postsData, tag }) {
           {postsData.map(({ id, date, tags, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href="/posts/[id]" as={`/posts/${id}`}>
-                <a>{title}</a>
+                <a className="text-blue-500 hover:underline">{title}</a>
               </Link>
               <br />
               <small className={utilStyles.lightText}>
