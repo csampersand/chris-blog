@@ -7,9 +7,11 @@ export default function GARD() {
         MyTotem
       </h1>
       <div className="flex flex-col mt-10 leading-7 text-2xl">
-        <p>
-          I rewrote MyTotem and developed artificial intelligence to automate
-          the design of branding and marketing material.
+        <p>MyTotem uses AI to generate logos and marketing content.</p>
+        <p className="mt-4">
+          I completely rewrote the previous web application and developed
+          artificial intelligence to automate the design of branding and
+          marketing material.
         </p>
         <p className="mt-4">
           Features included subscription payments, user accounts, and serverless

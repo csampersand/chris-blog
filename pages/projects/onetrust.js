@@ -8,8 +8,22 @@ export default function OneTrust() {
       </h1>
       <div className="flex flex-col mt-10 leading-7 text-2xl">
         <p>
+          OneTrust is the{' '}
+          <strong>
+            <a
+              href="https://www.onetrust.com/onetrust-inc-500/"
+              target="_blank"
+              className="text-blue-500 underline"
+            >
+              #1 fastest-growing company in America
+            </a>
+          </strong>{' '}
+          with <strong>48,000%</strong> growth, <strong>6,000</strong> customers
+          and a <strong>$2.7B</strong> valuation.
+        </p>
+        <p className="mt-4">
           I rapidly developed frontend features in close coordination with 6
-          other scrum team members.{' '}
+          other scrum team members for OneTrust's top grossing product offering.{' '}
         </p>
         <p className="mt-4">
           Wrote unit tests and E2E tests, contributed to their extensive
