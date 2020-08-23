@@ -59,7 +59,7 @@ export default function Layout({ children, home }) {
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            <a className="text-green-500 hover:underline">← Back to home</a>
+            <a className="text-blue-500 hover:underline">← Back to home</a>
           </Link>
         </div>
       )}

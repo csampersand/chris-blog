@@ -23,7 +23,7 @@ export default function Home({ allPostsData }) {
           I also publish a monthly newsletter about biohacking, startups,
           dating, and spirituality that is available to{' '}
           <Link href="/subscribe">
-            <a className="text-green-500 hover:underline">paid subscribers</a>
+            <a className="text-blue-500 hover:underline">paid subscribers</a>
           </Link>
           .
         </p>
@@ -42,7 +42,7 @@ export default function Home({ allPostsData }) {
           {allPostsData.map(({ id, date, tags, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href="/posts/[id]" as={`/posts/${id}`}>
-                <a className="text-green-500 hover:underline">{title}</a>
+                <a className="text-blue-500 hover:underline">{title}</a>
               </Link>
               <br />
               <small className={utilStyles.lightText}>
