@@ -13,8 +13,6 @@ You're learning that the hard way.
 
 Yesterday your nation erupted into outrage. A man by the name of George Floyd was filmed being killed by asphyxiation by a police officer.
 
-You enjoy asphyxiation under the right circumstances, both giving and receiving. But under a very different context, and usually with a safe word.
-
 Today you march with your fellow citizens. The police force has gone too far. It's time for change.
 
 Twitter quickly filled you in with the dirty details. 3pm, the state Capitol. You march for freedom from your oppressors. No justice, no peace.
