@@ -49,7 +49,7 @@ export default function Layout({ children, home }) {
             </Link>
             <h2 className="text-2xl leading-5 font-bold tracking-tighter my-4">
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a className="hover:underline">{name}</a>
               </Link>
             </h2>
           </>
@@ -59,7 +59,7 @@ export default function Layout({ children, home }) {
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            <a>← Back to home</a>
+            <a className="text-green-500 hover:underline">← Back to home</a>
           </Link>
         </div>
       )}
