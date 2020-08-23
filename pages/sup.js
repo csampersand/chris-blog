@@ -15,7 +15,7 @@ export default function Linktree() {
             />
           </a>
         </Link>
-        <h1 className="mt-8 text-6xl leading-6 font-black tracking-tighter my-4">
+        <h1 className="my-8 text-6xl leading-6 font-black tracking-tighter">
           Links to
           <br />
           <br />

@@ -13,7 +13,7 @@ export default function About() {
         />
       </div>
       <div className="flex flex-col-reverse sm:flex-row">
-        <div className="flex flex-col my-12 sm:my-4 px-4 sm:mx-6 text-center sm:text-left">
+        <div className="flex flex-col my-12 sm:my-4 mx-20 sm:mx-6 text-left">
           <Links />
         </div>
         <div className="flex-1 mx-0 sm:mx-8 px-4">
