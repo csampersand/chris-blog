@@ -11,17 +11,35 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
+      <section className="text-xl leading-6">
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          <strong>Hey, I'm Chris.</strong> Welcome to my blog.
         </p>
+        <p>
+          This is where I keep my more polished ideas that I think are worth
+          sharing.
+        </p>
+        <p>
+          I also publish a monthly newsletter about biohacking, startups,
+          dating, and spirituality that is available to{' '}
+          <Link href="/subscribe">
+            <a>paid subscribers</a>
+          </Link>
+          .
+        </p>
+        <style jsx>
+          {`
+            p {
+              margin-top: 1em;
+              margin-bottom: 1em;
+            }
+          `}
+        </style>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
+      <section className="text-xl leading-6 pt-1">
+        <h2 className="font-bold text-2xl leading-6 my-4">Blog</h2>
+        <ul className="list-none p-0 m-0">
+          {allPostsData.map(({ id, date, tags, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href="/posts/[id]" as={`/posts/${id}`}>
                 <a>{title}</a>
@@ -30,6 +48,16 @@ export default function Home({ allPostsData }) {
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
               </small>
+              <br />
+              {tags && (
+                <ul className="list-none">
+                  {tags.map((tag) => (
+                    <li className="mr-1 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium leading-4 bg-gray-100 text-gray-500">
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
         </ul>

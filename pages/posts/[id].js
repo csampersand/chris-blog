@@ -17,6 +17,20 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <style jsx global>
+          {`
+            p {
+              margin-top: 1em;
+              margin-bottom: 1em;
+            }
+            ul {
+              list-style-type: disc;
+              margin-top: 1em;
+              margin-bottom: 1 em;
+              padding-left: 40px;
+            }
+          `}
+        </style>
       </article>
     </Layout>
   )
