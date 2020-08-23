@@ -9,12 +9,12 @@ export default function Links() {
           <a>
             <img
               src="/images/logo.png"
-              className="h-32 w-32 rounded-full"
+              className="h-48 w-48 rounded-full"
               alt={name}
             />
           </a>
         </Link>
-        <h1 className="text-6xl leading-10 font-black tracking-tighter my-4">
+        <h1 className="mt-8 text-6xl leading-10 font-black tracking-tighter my-4">
           Links to
           <br />
           my stuff
