@@ -3,8 +3,8 @@ import Link from 'next/link'
 export default function Links() {
   const name = 'Chris Anderson'
   return (
-    <div className="max-w-3xl px-4 mt-12 mx-auto mb-24">
-      <div className="flex flex-col">
+    <div className="flex flex-col max-w-3xl px-4 mt-12 mx-auto mb-24">
+      <div className="flex flex-col items-center sm:items-start">
         <Link href="/about">
           <a>
             <img
@@ -15,8 +15,8 @@ export default function Links() {
           </a>
         </Link>
       </div>
-      <div className="flex flex-row">
-        <div className="flex flex-col my-4 mx-6">
+      <div className="flex flex-col-reverse sm:flex-row">
+        <div className="flex flex-col my-4 mx-16 sm:mx-6 text-center sm:text-left">
           <a className="text-3xl font-bold mb-1 transition ease-in-out duration-200 hover:text-blue-500">
             Projects
           </a>
@@ -54,8 +54,10 @@ export default function Links() {
           </a>
         </div>
         <div className="flex-1 mx-8 px-4">
-          <h1 className="text-5xl font-bold">Chris Anderson</h1>
-          <div className="text-2xl text-medium leading-7">
+          <h1 className="mt-5 text-5xl font-bold leading-10 text-center sm:text-left">
+            {name}
+          </h1>
+          <div className="mt-5 text-2xl text-medium leading-7">
             <p>I build rock-solid software using the latest tech.</p>
             <p className="mt-4">Full-stack. Web and mobile.</p>
             <p className="mt-4">
