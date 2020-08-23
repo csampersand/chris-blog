@@ -6,11 +6,6 @@ export default function Links() {
       <a className="text-3xl font-bold mb-1 transition ease-in-out duration-200 hover:text-blue-500">
         Projects
       </a>
-      <Link href="/projects/gard">
-        <a className="text-2xl transition ease-in-out duration-200 hover:text-blue-500">
-          GARD
-        </a>
-      </Link>
       <Link href="/projects/mytotem">
         <a className="text-2xl transition ease-in-out duration-200 hover:text-blue-500">
           MyTotem
@@ -19,6 +14,11 @@ export default function Links() {
       <Link href="/projects/onetrust">
         <a className="text-2xl transition ease-in-out duration-200 hover:text-blue-500">
           OneTrust
+        </a>
+      </Link>
+      <Link href="/projects/gard">
+        <a className="text-2xl transition ease-in-out duration-200 hover:text-blue-500">
+          GARD
         </a>
       </Link>
       <Link href="/projects/seize-the-market">
