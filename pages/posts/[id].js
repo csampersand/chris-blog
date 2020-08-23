@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import Layout from '../../components/layout'
+import Post from '../../components/post'
 import Date from '../../components/date'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Link from 'next/link'
 
 import utilStyles from '../../styles/utils.module.css'
 
-export default function Post({ postData }) {
+export default function PostLayout({ postData }) {
   return (
     <Layout>
       <Head>
@@ -31,21 +32,7 @@ export default function Post({ postData }) {
             </ul>
           )}
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        <style jsx global>
-          {`
-            p {
-              margin-top: 1em;
-              margin-bottom: 1em;
-            }
-            ul {
-              list-style-type: disc;
-              margin-top: 1em;
-              margin-bottom: 1 em;
-              padding-left: 40px;
-            }
-          `}
-        </style>
+        <Post className="post" contentHtml={postData.contentHtml} />
       </article>
     </Layout>
   )
