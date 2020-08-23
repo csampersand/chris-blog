@@ -5,7 +5,7 @@ export default function Links() {
   return (
     <div className="max-w-xs px-4 mt-12 mx-auto mb-24">
       <div className="flex flex-col items-center">
-        <Link href="/">
+        <Link href="/about">
           <a>
             <img
               src="/images/logo.png"
@@ -21,7 +21,7 @@ export default function Links() {
         </h1>
       </div>
       <div className="flex flex-col my-4 mx-6">
-        <a className="text-3xl font-bold transition ease-in-out duration-200 hover:text-blue-500">
+        <a className="text-3xl font-bold mb-1 transition ease-in-out duration-200 hover:text-blue-500">
           Projects
         </a>
         <a className="text-2xl transition ease-in-out duration-200 hover:text-blue-500">
@@ -36,16 +36,24 @@ export default function Links() {
         <a className="text-2xl transition ease-in-out duration-200 hover:text-blue-500">
           Seize The Market
         </a>
-        <a className="text-2xl transition ease-in-out duration-200 hover:text-blue-500">
+        <a className="text-2xl mb-1 transition ease-in-out duration-200 hover:text-blue-500">
           HylasFit
         </a>
-        <a className="text-3xl font-bold transition ease-in-out duration-200 hover:text-blue-500">
+        <a
+          href="/Resume-04.20.20.pdf"
+          className="text-3xl font-bold mb-1 transition ease-in-out duration-200 hover:text-blue-500"
+        >
           Resume
         </a>
-        <a className="text-3xl font-bold transition ease-in-out duration-200 hover:text-blue-500">
-          Blog
-        </a>
-        <a className="text-3xl font-bold transition ease-in-out duration-200 hover:text-blue-500">
+        <Link href="/">
+          <a className="text-3xl font-bold mb-1 transition ease-in-out duration-200 hover:text-blue-500">
+            Blog
+          </a>
+        </Link>
+        <a
+          href="https://instagram.com/chrisanderson.jpeg"
+          className="text-3xl font-bold mb-1 transition ease-in-out duration-200 hover:text-blue-500"
+        >
           Instagram
         </a>
       </div>
