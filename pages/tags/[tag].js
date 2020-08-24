@@ -49,15 +49,7 @@ export default function PostList({ postsData, tag }) {
   )
 }
 
-export async function getStaticPaths() {
-  const paths = await getTagIds()
-  return {
-    paths,
-    fallback: false,
-  }
-}
-
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const postsData = await getSortedPostsDataByTag(params.tag)
   return {
     props: {
