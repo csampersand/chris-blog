@@ -38,15 +38,7 @@ export default function PostLayout({ postData }) {
   )
 }
 
-export async function getStaticPaths() {
-  const paths = await getAllPostSlugs()
-  return {
-    paths,
-    fallback: false,
-  }
-}
-
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const postData = await getPostData(params.slug)
   return {
     props: {
