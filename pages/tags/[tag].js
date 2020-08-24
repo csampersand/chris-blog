@@ -17,19 +17,19 @@ export default function PostList({ postsData, tag }) {
           Posts tagged '{tag}'
         </h2>
         <ul className="list-none p-0 m-0">
-          {postsData.map(({ id, date, tags, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href="/posts/[id]" as={`/posts/${id}`}>
+          {postsData.map(({ title, slug, metadata }) => (
+            <li className={utilStyles.listItem} key={slug}>
+              <Link href="/posts/[slug]" as={`/posts/${slug}`}>
                 <a className="text-blue-500 hover:underline">{title}</a>
               </Link>
               <br />
               <small className={utilStyles.lightText}>
-                <Date dateString={date} />
+                <Date dateString={metadata.date} />
               </small>
               <br />
-              {tags && (
+              {metadata.tags && (
                 <ul className="list-none">
-                  {tags.map((tag) => (
+                  {metadata.tags.map((tag) => (
                     <li
                       key={tag}
                       className="mr-1 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium leading-4 bg-gray-100 text-gray-500"
@@ -58,11 +58,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postsData = await getSortedPostsDataByTag(params.id)
+  const postsData = await getSortedPostsDataByTag(params.tag)
   return {
     props: {
       postsData,
-      tag: params.id,
+      tag: params.tag,
     },
   }
 }
