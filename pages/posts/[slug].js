@@ -17,7 +17,7 @@ export default function PostLayout({ postData }) {
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className="text-gray-400">
           <Date dateString={postData.publishedOn} />
-          {postData.tags.length !== 0 && (
+          {postData.tags && (
             <ul className="list-none p-0">
               {postData.tags.map((tag) => (
                 <li

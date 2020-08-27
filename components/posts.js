@@ -19,7 +19,7 @@ export default function Posts({ posts, header }) {
               <Date dateString={publishedOn} />
             </small>
             <br />
-            {tags.length !== 0 && (
+            {tags && (
               <ul className="list-none">
                 {tags.map((tag) => (
                   <li
