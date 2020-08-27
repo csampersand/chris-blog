@@ -21,13 +21,13 @@ export default function Posts({ posts, header }) {
             <br />
             {tags.length !== 0 && (
               <ul className="list-none">
-                {tags.map(({ name }) => (
+                {tags.map((tag) => (
                   <li
-                    key={name}
+                    key={tag}
                     className="mr-1 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium leading-4 bg-gray-100 text-gray-500"
                   >
-                    <Link href="/tags/[tag]" as={`/tags/${name}`}>
-                      <a className="hover:underline">{name}</a>
+                    <Link href="/tags/[tag]" as={`/tags/${tag}`}>
+                      <a className="hover:underline">{tag}</a>
                     </Link>
                   </li>
                 ))}
