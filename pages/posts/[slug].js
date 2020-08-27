@@ -15,17 +15,17 @@ export default function PostLayout({ postData }) {
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString={postData.metadata.date} />
-          {postData.metadata.tags && (
+        <div className="text-gray-400">
+          <Date dateString={postData.publishedOn} />
+          {postData.tags.length !== 0 && (
             <ul className="list-none p-0">
-              {postData.metadata.tags.map((tag) => (
+              {postData.tags.map(({ name }) => (
                 <li
-                  key={tag}
+                  key={name}
                   className="mr-1 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium leading-4 bg-gray-100 text-gray-500"
                 >
-                  <Link href="/tags/[tag]" as={`/tags/${tag}`}>
-                    <a className="hover:underline">{tag}</a>
+                  <Link href="/tags/[tag]" as={`/tags/${name}`}>
+                    <a className="hover:underline">{name}</a>
                   </Link>
                 </li>
               ))}
@@ -38,7 +38,15 @@ export default function PostLayout({ postData }) {
   )
 }
 
-export async function getServerSideProps({ params }) {
+export async function getStaticPaths() {
+  const paths = await getAllPostSlugs()
+  return {
+    paths,
+    fallback: false,
+  }
+}
+
+export async function getStaticProps({ params }) {
   const postData = await getPostData(params.slug)
   return {
     props: {

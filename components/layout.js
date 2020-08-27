@@ -35,6 +35,31 @@ export default function Layout({ children, home }) {
             <h1 className="text-4xl leading-5 font-bold tracking-tighter my-4">
               {name}
             </h1>
+            <section className="text-xl leading-6">
+              <p>
+                <strong>Hey, I'm Chris.</strong> Welcome to my blog.
+              </p>
+              <p>
+                This is where I keep my more polished ideas that I think are
+                worth sharing.
+              </p>
+              <p>
+                I also publish a monthly newsletter about biohacking, startups,
+                dating, and mindfulness that is available to{' '}
+                <Link href="/subscribe">
+                  <a className="text-blue-500 hover:underline"> subscribers</a>
+                </Link>
+                .
+              </p>
+              <style jsx>
+                {`
+                  p {
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                  }
+                `}
+              </style>
+            </section>
           </>
         ) : (
           <>
