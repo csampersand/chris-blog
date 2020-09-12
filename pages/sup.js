@@ -5,7 +5,7 @@ import Links from '../components/links'
 export default function Linktree() {
   const name = 'Chris Anderson'
   return (
-    <div className="max-w-xs px-4 mt-12 mx-auto mb-24">
+    <div className="max-w-xs px-4 mt-12 mx-auto mb-24 bg-white">
       <Head>
         <title>Links</title>
       </Head>
@@ -19,14 +19,14 @@ export default function Linktree() {
             />
           </a>
         </Link>
-        <h1 className="my-8 text-6xl leading-6 font-black tracking-tighter text-white">
+        <h1 className="my-8 text-6xl leading-6 font-black tracking-tighter">
           Links to
           <br />
           <br />
           my stuff
         </h1>
       </div>
-      <div className="flex flex-col my-4 mx-6 text-white">
+      <div className="flex flex-col my-4 mx-6">
         <Links />
       </div>
     </div>
