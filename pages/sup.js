@@ -5,7 +5,7 @@ import Links from '../components/links'
 export default function Linktree() {
   const name = 'Chris Anderson'
   return (
-    <div className="max-w-xs px-4 mt-12 mx-auto mb-24 bg-white">
+    <div className="max-w-xs px-4 mt-12 mx-auto mb-24">
       <Head>
         <title>Links</title>
       </Head>
