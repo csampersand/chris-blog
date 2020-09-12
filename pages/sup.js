@@ -19,14 +19,14 @@ export default function Linktree() {
             />
           </a>
         </Link>
-        <h1 className="my-8 text-6xl leading-6 font-black tracking-tighter">
+        <h1 className="my-8 text-6xl leading-6 font-black tracking-tighter text-white">
           Links to
           <br />
           <br />
           my stuff
         </h1>
       </div>
-      <div className="flex flex-col my-4 mx-6">
+      <div className="flex flex-col my-4 mx-6 text-white">
         <Links />
       </div>
     </div>
