@@ -30,12 +30,21 @@ img {
     margin-top: 1em;
     margin-bottom: 1em;
   }
+
   ul {
     list-style-type: disc;
     margin-top: 1em;
     margin-bottom: 1 em;
     padding-left: 40px;
   }
+
+  ol {
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    padding-left: 40px;
+  }
+
   h1 {
     font-weight: bold;
     font-size: 2.25rem;
@@ -44,6 +53,7 @@ img {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+
   h2 {
     font-weight: bold;
     font-size: 1.5rem;
@@ -51,9 +61,11 @@ img {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+
   a {
     color: #4299e1;
   }
+
   a:hover {
     text-decoration: underline;
   }
