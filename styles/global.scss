@@ -6,14 +6,26 @@
 
 @import 'tailwindcss/utilities';
 
+
+/* purgecss start ignore */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.6;
   font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -70,3 +82,5 @@ img {
     text-decoration: underline;
   }
 }
+
+/* purgecss end ignore */

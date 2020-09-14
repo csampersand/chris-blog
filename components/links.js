@@ -43,7 +43,7 @@ export default function Links() {
         </a>
       </Link>
       <a
-        href="https://instagram.com/chrisanderson.jpeg"
+        href="https://instagram.com/chrisanderson.js"
         className="text-3xl font-bold mb-1 transition ease-in-out duration-200 hover:text-blue-500"
       >
         Instagram
