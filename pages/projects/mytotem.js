@@ -14,9 +14,9 @@ export default function MyTotem() {
       <div className="flex flex-col mt-10 leading-7 text-2xl">
         <p>MyTotem uses AI to generate logos and marketing content.</p>
         <p className="mt-4">
-          I completely rewrote the previous web application and developed
-          artificial intelligence to automate the design of branding and
-          marketing material.
+          I completely rewrote the previous web application and worked on
+          automation to streamline the design of branding and marketing
+          material.
         </p>
         <p className="mt-4">
           Features included subscription payments, user accounts, and serverless
@@ -24,8 +24,7 @@ export default function MyTotem() {
         </p>
 
         <p className="mt-4 font-bold">
-          Vue 3, React, Next.js, Laravel, Stripe, Vercel Serverless, Amazon
-          Sagemaker
+          Vue 3, React, Next.js, Laravel, Stripe, Vercel
         </p>
         <Link href="/about">
           <a className="mt-12 text-xl text-blue-500 hover:underline">
