@@ -32,7 +32,7 @@ export default function Links() {
         </a>
       </Link>
       <a
-        href="/Resume-04.20.20.pdf"
+        href="/Resume-2021-02-25.pdf"
         className="text-3xl font-bold mb-1 transition ease-in-out duration-200 hover:text-blue-500"
       >
         Resume
